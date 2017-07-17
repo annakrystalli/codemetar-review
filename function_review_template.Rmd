@@ -1,0 +1,29 @@
+---
+title: "function review template"
+author: "Anna Krystalli"
+date: "17/07/2017"
+output: html_document
+---
+
+### [x] <function name>
+
+#### code
+```{r}
+function_name
+```
+
+
+#### documentation
+
+```{r}
+?function_name
+```
+
+
+#### examples
+
+```{r}
+
+```
+
+<br>
