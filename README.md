@@ -50,3 +50,10 @@ in response to your review.  At this stage, we ask that you respond as to whethe
 the change sufficiently address any issues raised in your review. We encourage
 ongoing discussion between package authors and reviewers, and you may ask editors
 to clarify issues in the review thread, as well.
+
+***
+
+## Extra tips & tricks
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Example of a review that helped increase usability <a href="https://t.co/FbqCxKiIGV">https://t.co/FbqCxKiIGV</a> 😉</p>&mdash; Maëlle Salmon (@ma_salmon) <a href="https://twitter.com/ma_salmon/status/886925976525058048">July 17, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
