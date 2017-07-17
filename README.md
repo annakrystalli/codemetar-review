@@ -56,7 +56,7 @@ to clarify issues in the review thread, as well.
 ## Extra tips & tricks
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Run all the code and play around with the data structures beyond just seeing if the code &quot;works&quot;. Usability matters but is hard to test.</p>&mdash; Thomas Leeper (@thosjleeper) <a href="https://twitter.com/thosjleeper/status/886925421257908224">July 17, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Example of a review that helped increase usability <a href="https://t.co/FbqCxKiIGV">https://t.co/FbqCxKiIGV</a> 😉</p>&mdash; Maëlle Salmon (@ma_salmon) <a href="https://twitter.com/ma_salmon/status/886925976525058048">July 17, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
