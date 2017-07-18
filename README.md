@@ -60,3 +60,6 @@ to clarify issues in the review thread, as well.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Example of a review that helped increase usability <a href="https://t.co/FbqCxKiIGV">https://t.co/FbqCxKiIGV</a> 😉</p>&mdash; Maëlle Salmon (@ma_salmon) <a href="https://twitter.com/ma_salmon/status/886925976525058048">July 17, 2017</a></blockquote>
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">If you can, try to apply to package to a data set or a problem. You&#39;ll find friction points when you try to integrate with your workflow.</p>&mdash; Noam Ross (@noamross) <a href="https://twitter.com/noamross/status/886999069750693888">July 17, 2017</a></blockquote>
+
+
