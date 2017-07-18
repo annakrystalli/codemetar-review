@@ -1,0 +1,116 @@
+---
+title: "review workflow"
+output: html_notebook
+---
+
+## Test installation and loading
+
+```{r}
+devtools::install_github("codemeta/codemetar")
+```
+```{r}
+library("codemetar")
+```
+
+All looks good so far.
+
+## Check functions
+
+### All functions:
+```{r}
+
+ls("package:codemetar")
+```
+<br>
+
+### [x] codemeta_validate
+
+<br>
+
+#### code
+```{r}
+codemeta_validate
+```
+
+<br>
+
+#### documentation
+
+```{r}
+?codemeta_validate
+```
+I think the description might not be complete? (ie ...verifying that the result ***matches or conforms to sth?***).
+
+<br>
+
+#### examples
+
+```{r}
+ex <- system.file("examples/codemeta.json", package="codemetar")
+ex
+codemeta_validate(ex)
+```
+
+<br><br>
+
+
+### - [x] create_codemeta
+
+<br>
+
+#### code
+```{r}
+create_codemeta
+```
+<br>
+
+#### documentation
+
+```{r}
+?create_codemeta
+```
+<br>
+
+#### examples
+
+```{r}
+cm <- create_codemeta("jsonlite")
+cm
+```
+
+
+
+
+## Good practice
+
+```{r}
+source("https://install-github.me/MangoTheCat/goodpractice")
+```
+
+```{r}
+library(goodpractice)
+gp("/Users/Anna/Library/R/3.4/library/codemetar")
+```
+```{r}
+library(covr)
+cov <- package_coverage("pkg/codemetar")
+#cov <- covr::package_coverage(path = "/Users/Anna/Library/R/3.4/library/codemetar", type = c("vignettes"),
+#                              quiet = F, relative_path = F)
+length(cov)
+str(cov, 1)
+```
+```{r}
+library(devtools)
+head(as.package("/Users/Anna/Library/R/3.4/library/codemetar"))
+```
+
+
+```{r}
+test_check("dplyr")
+```
+
+
+```{r}
+devtools::session_info()
+```
+

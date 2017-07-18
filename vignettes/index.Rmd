@@ -1,0 +1,8 @@
+---
+title: "Review resources"
+author: "Anna Krystalli"
+date: "18/07/2017"
+output: html_document
+---
+
+## [package testing](https://annakrystalli.github.io/codemetar-review/pkg_testing.nb.html)

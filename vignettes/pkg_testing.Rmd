@@ -101,7 +101,7 @@ Anna [master|✚ 2…190]
 
 ```{r}
 library(goodpractice)
-gp("pkg/codemetar")
+gp("../pkg/codemetar")
 ```
 
 
