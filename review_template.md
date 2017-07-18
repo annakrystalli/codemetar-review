@@ -8,8 +8,8 @@
 
 The package includes all the following forms of documentation:
 
-- [ ] **A statement of need** clearly stating problems the software is designed to solve and its target audience in README
-- [ ] **Installation instructions:** for the development version of package and any non-standard dependencies in README
+- [x] **A statement of need** clearly stating problems the software is designed to solve and its target audience in README
+- [x] **Installation instructions:** for the development version of package and any non-standard dependencies in README
 - [ ] **Vignette(s)** demonstrating major functionality that runs successfully locally
 - [ ] **Function Documentation:** for all exported functions in R help
 - [ ] **Examples** for all exported functions in R Help that run successfully locally
