@@ -1,0 +1,117 @@
+---
+title: "package testing"
+output: html_notebook
+---
+
+***
+
+First, I downloaded all the source code from github into **pkg/** and unzipped, renaming the unzipped dir from **codemetar-master/** to **codemetar**. Then in the terminal, I navigated to dir **pkg/**
+
+## build package:
+
+Anna [master|✚ 2…190] 
+
+        17:27 $ R CMD build codemetar
+        * checking for file ‘codemetar/DESCRIPTION’ ... OK
+        * preparing ‘codemetar’:
+        * checking DESCRIPTION meta-information ... OK
+        * installing the package to build vignettes
+        * creating vignettes ... OK
+        * checking for LF line-endings in source and make files
+        * checking for empty or unneeded directories
+        * looking to see if a ‘data/datalist’ file should be added
+        * building ‘codemetar_0.1.0.tar.gz’
+
+All ok
+
+## check package
+
+Anna [master|✚ 2…190]  
+
+        17:29 $ R CMD check codemetar_0.1.0.tar.gz
+        * using log directory ‘/Users/Anna/Documents/workflows/rOpenSci/codemetar-review/pkg/codemetar.Rcheck’
+        * using R version 3.4.1 (2017-06-30)
+        * using platform: x86_64-apple-darwin15.6.0 (64-bit)
+        * using session charset: UTF-8
+        * checking for file ‘codemetar/DESCRIPTION’ ... OK
+        * checking extension type ... Package
+        * this is package ‘codemetar’ version ‘0.1.0’
+        * package encoding: UTF-8
+        * checking package namespace information ... OK
+        * checking package dependencies ... OK
+        * checking if this is a source package ... OK
+        * checking if there is a namespace ... OK
+        * checking for executable files ... OK
+        * checking for hidden files and directories ... OK
+        * checking for portable file names ... OK
+        * checking for sufficient/correct file permissions ... OK
+        * checking whether package ‘codemetar’ can be installed ... OK
+        * checking installed package size ... OK
+        * checking package directory ... OK
+        * checking ‘build’ directory ... OK
+        * checking DESCRIPTION meta-information ... OK
+        * checking top-level files ... OK
+        * checking for left-over files ... OK
+        * checking index information ... OK
+        * checking package subdirectories ... OK
+        * checking R files for non-ASCII characters ... OK
+        * checking R files for syntax errors ... OK
+        * checking whether the package can be loaded ... OK
+        * checking whether the package can be loaded with stated dependencies ... OK
+        * checking whether the package can be unloaded cleanly ... OK
+        * checking whether the namespace can be loaded with stated dependencies ... OK
+        * checking whether the namespace can be unloaded cleanly ... OK
+        * checking loading without being on the library search path ... OK
+        * checking dependencies in R code ... OK
+        * checking S3 generic/method consistency ... OK
+        * checking replacement functions ... OK
+        * checking foreign function calls ... OK
+        * checking R code for possible problems ... OK
+        * checking Rd files ... OK
+        * checking Rd metadata ... OK
+        * checking Rd cross-references ... OK
+        * checking for missing documentation entries ... OK
+        * checking for code/documentation mismatches ... OK
+        * checking Rd \usage sections ... OK
+        * checking Rd contents ... OK
+        * checking for unstated dependencies in examples ... OK
+        * checking R/sysdata.rda ... OK
+        * checking installed files from ‘inst/doc’ ... OK
+        * checking files in ‘vignettes’ ... OK
+        * checking examples ... OK
+        * checking for unstated dependencies in ‘tests’ ... OK
+        * checking tests ...
+          Running ‘testthat.R’
+         OK
+        * checking for unstated dependencies in vignettes ... OK
+        * checking package vignettes in ‘inst/doc’ ... OK
+        * checking running R code from vignettes ...
+           ‘codemeta-intro.Rmd’ using ‘UTF-8’ ... OK
+           ‘codemeta-parsing.Rmd’ using ‘UTF-8’ ... OK
+           ‘translating.Rmd’ using ‘UTF-8’ ... OK
+           ‘validation-in-json-ld.Rmd’ using ‘UTF-8’ ... OK
+         NONE
+        * checking re-building of vignette outputs ... OK
+        * checking PDF version of manual ... OK
+        * DONE
+        
+        Status: OK
+
+### ran goodpractice checks
+
+```{r}
+library(goodpractice)
+gp("pkg/codemetar")
+```
+
+
+### Also performed checks using `testthat` on the installed package from github
+
+
+```{r}
+library(testthat)
+library(codemetar)
+test_package("codemetar")
+```
+
+
