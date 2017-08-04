@@ -46,8 +46,6 @@ Estimated hours spent reviewing: 15 (too long I know!)
 
 ### Review Comments
 
-*Apologies for my long review and hope it doesn't feel nitpicky! I really got into the package and also used to be a QA auditor so hard not to look into the details. Bare with me though as most are just suggestions.*
-
 This package provides functionality to easily create JSON-LD metadata files describing r packages according to agreed on code medata controlled vocabularies. The functions are lightweight, clean and have a lot of automation and quality control baked in from their ability to extract information from package documentation and online standardised resources.
 
 It is a great addition to rOpenSci and general movements towards both linked data and better curation, visibility and citability of software. Overall, the functions are smooth and easy to use. I think the most difficult part of the package is getting your head round the concepts. There is good `codemeta` and `JSON-LD` documentation to which `codemetar` documentation links to (I love Manu's videos!). I also realise that the purpose of package documentation is mainly to demonstrate use and not necessarily educate on the background. However I feel that a small amount of extra explanation and jargon busting could really help users get their head round what's going on and why it's such an important and awesome initiative! 
@@ -190,8 +188,11 @@ crosswalks()
 #> [20] "DOAP"                                
 #> [21] "Wikidata"
 ```
-    + I also found the non-exported function `crosswalk_table` quite useful (some commented out code in there). Other's might too?
-    + But I feel the most useful would be to be able to narrow down field mappings between particular repositories of interest. So building on the `crosswalk_table` function, I would probably find the following functions quite useful:
+
+ 
++ I also found the non-exported function `crosswalk_table` quite useful (some commented out code in there). Other's might too?
+
++ But I feel the most useful would be to be able to narrow down field mappings between particular repositories of interest. So building on the `crosswalk_table` function, I would probably find the following functions quite useful:
 
 ``` r
 library(readr)
@@ -229,8 +230,8 @@ crosswalk_map(from = "GitHub", to = c("Zenodo", "Figshare"), trim = T)
 
 ##### `write_codemeta`
 
-When writing the file into a package (ie when `DESCRIPTION` is detected), adding `"codemeta.json"` to `.Rbuildignore` assumes that the user has not changed the `path`. While it is advised in the help file to leave as default, as the user can change it, there could theoretically be a situation where the user has called it something else but the function has written `"codemeta.json"` to `.Rbuildignore`. Just wondering whether that would cause any problems downstream? 
-
+- When writing the file into a package (ie when `DESCRIPTION` is detected), adding `"codemeta.json"` to `.Rbuildignore` assumes that the user has not changed the `path`. While it is advised in the help file to leave as default, as the user can change it, there could theoretically be a situation where the user has called it something else but the function has written `"codemeta.json"` to `.Rbuildignore`. Just wondering whether that would cause any problems downstream? 
+- Also when supplying a `JSON-LD r list` instead of a path to `pkg`, function works but throws a warning: `the condition has length > 1 and only the first element will be used`
 
 #### Compliance with rOpenSci Packaging Guide
 
@@ -239,4 +240,4 @@ When writing the file into a package (ie when `DESCRIPTION` is detected), adding
 - No contributing.md or anything about contributing in the README. However does include a good code of conduct.
 
 
-You can see more about me review [here](http://annakrystalli.me/codemetar-review/index.html)
+You can see more about my review [here](http://annakrystalli.me/codemetar-review/index.html)
